@@ -1,5 +1,8 @@
-const If = (children) => {
-    return (  );
+const If = ({condition}) =>
+{
+    return (
+        <div>{condition}</div>
+    )
 }
  
-export default If;
+export default If
