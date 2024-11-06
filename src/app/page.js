@@ -1,11 +1,12 @@
-import Button from "@/components/Button";
-import If from "@/components/if";
+import CookieConsentPopup from "@/components/CookieConsentPopup";
+import If from "../components/If.jsx";
 
 export default function Home() {
+  const cookieIsAccepted = true;
   return (
     <div>
-      <If condition>
-        <Button />
+      <If condition={cookieIsAccepted}>
+        <CookieConsentPopup />
       </If>
     </div>
   );
